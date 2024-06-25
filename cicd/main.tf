@@ -43,7 +43,7 @@ module "nexus" {
   name = "nexus"
 
   instance_type          = "t3.medium"
-  vpc_security_group_ids = ["sg-075582b1232f7b5f4"]
+  vpc_security_group_ids = ["sg-052f4d5f80725125a"]
   # convert StringList to list and get first element
   subnet_id = "subnet-0a6fedadcac610ed3"
   ami = data.aws_ami.nexus_ami_info.id
